@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="ProjectorControl.exe" version="1.0.0.0" publicKeyToken="247d3a6120946e4f" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ProjectorControl" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="ProjectorControl.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PJLink.dll" size="17920">
+      <assemblyIdentity name="PJLink" version="1.0.0.0" publicKeyToken="4D9956C3EC1205AA" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ML1GGuMwYrdUVO2QX00VqdDfwBU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProjectorControl.exe" size="9728">
+      <assemblyIdentity name="ProjectorControl" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>HoZYJxN+ljEJ0oRYLZ8XHZNgASQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=bismuth\david" issuerKeyHash="df817b05675e4d131d7937482f0edb50522ddcd1" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>cj8yGSRTLe7M2OHXPAx3d3sbeYo=</DigestValue></Reference></SignedInfo><SignatureValue>XqzuGaw2BwWg7XIQ/4qcXeobDytKZTh9NMdsHskb2mOhUIiK6xj9x3Yq4ML0QzQPxwSQ0bBOjO6Gm5o4NSroDzQ69HARWyC+wRXOm+YP4tqK36Lk1IlnLCobuavTxGLUut0GEKliKOBTNXpwss6Gt8G/RS6G3v1MMEOuNVkmx5o=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xJy9OuXTBOuH2qKeoOjRi3IKMw6Jc+fJW0nOXLjZcoegIzQFEQVSQoqU2u4kWYq2MvUlaUO5l4cUuYO0ZHmYcLIBLEW01gn9tRTbq6LgAedUXItVw24IgxXq8hUf1T+CyU9ViZIGBEtLVnOkFR34y4D3vmGTMLSE4JTisxDc1Sk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8a791b7b77770c3cd7e1d8ccee2d532419323f72" Description="" Url=""><as:assemblyIdentity name="ProjectorControl.exe" version="1.0.0.0" publicKeyToken="247d3a6120946e4f" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=bismuth\david</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>XmEultkbndMLHLiZ947XYPLRIcM=</DigestValue></Reference></SignedInfo><SignatureValue>X/jkHxRCltGl3fj9iX/OggnTTozlszE975+jhHkwMDy/biI843YPjtKQgL6pigzzKBPlOKZ+W+D9kJCs0S3MXRkwDACB2FFmNr+aA7UMuDHO7LvH//6qFvyNl6NGNLmNkCUkSxVjVcC5XESaABXbUJymr8f/rwH1I3npI4PNy0c=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xJy9OuXTBOuH2qKeoOjRi3IKMw6Jc+fJW0nOXLjZcoegIzQFEQVSQoqU2u4kWYq2MvUlaUO5l4cUuYO0ZHmYcLIBLEW01gn9tRTbq6LgAedUXItVw24IgxXq8hUf1T+CyU9ViZIGBEtLVnOkFR34y4D3vmGTMLSE4JTisxDc1Sk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBzTCCATagAwIBAgIQFXSFq+W3wblIj0xcbBa+oDANBgkqhkiG9w0BAQUFADAlMSMwIQYDVQQDHhoAYgBpAHMAbQB1AHQAaABcAGQAYQB2AGkAZDAeFw0xMzAzMDQxMjA0MjhaFw0xNDAzMDQxODA0MjhaMCUxIzAhBgNVBAMeGgBiAGkAcwBtAHUAdABoAFwAZABhAHYAaQBkMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDEnL065dME64faop6g6NGLcgozDolz58lbSc5cuNlyh6AjNAURBVJCipTa7iRZirYy9SVpQ7mXhxS5g7RkeZhwsgEsRbTWCf21FNurouAB51Rci1XDbgiDFeryFR/VP4LJT1WJkgYES0tWc6QVHfjLgPe+YZMwtITglOKzENzVKQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBADWIfv85xjLgSOhI4Q5XeGQrI0zQgt49yzHbbDyJnLHT2KvGLsxbJ/z5oGRIH0Ngh9QlYrDD+FPKV0DpdCe9lxSE5HP8tsEsw+6rhZ3vO416IpXygKzoNpkO3S/mU1296Th6ZWIyYICn5JsfWevS50QD3tzu8NZF1rFXdepDF9pD</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
